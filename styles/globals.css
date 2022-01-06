@@ -1,0 +1,42 @@
+svg path {
+  stroke-width: 0.5;
+}
+.features svg path,
+button svg path {
+  stroke-width: 2;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .first-hero-Img {
+    --detail-bg: #333333;
+    --heading-color: #ffffff;
+    --description-color: #ffffff;
+    --btn-bg-color: #ffffff;
+    --btn-text-color: #000000;
+    --btn-text-border-color: #000000;
+    --btn-hover-color: #e6e6e6;
+  }
+
+  .second-hero-Img {
+    --heading-color: #000000;
+    --description-color: #000000;
+    --btn-bg-color: #000000;
+    --btn-text-color: #ffffff;
+    --btn-text-border-color: #ffffff;
+    --detail-bg: #e6e6e6;
+    --btn-hover-color: #000000;
+  }
+}
+
+@layer components {
+  .navLink {
+    @apply cursor-pointer border-b-2 border-transparent hover:border-gray-800;
+  }
+  .navIcon {
+    @apply cursor-pointer text-black;
+  }
+}
